@@ -41,7 +41,6 @@ import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import PreviewIcon from '@mui/icons-material/Preview';
 import Tooltip from '@mui/material/Tooltip';
-{/* <Tooltip title={"View Permit not approved"}> */}
 
 
 
@@ -218,7 +217,7 @@ function ViewPermitNotApproved() {
                                                             <PreviewIcon fontSize="small"/>
                                                         </Button>
                                                 </Link>  
-                                                </Tooltip>
+                                            </Tooltip>
                                             </TableCell>                            
                                      </TableRow>
                                      
