@@ -16,6 +16,7 @@ import Page404 from './components/errors/Page404';
 
 
 axios.defaults.baseURL="http://localhost:8000/";
+// axios.defaults.baseURL="https://nrmcb.herokuapp.com/";
 //to accept  json format
 axios.defaults.headers.post['Accept']='appllication/json';
 axios.defaults.headers.post['Content-Type']='appllication/json';
