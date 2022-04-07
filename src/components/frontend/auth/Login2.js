@@ -24,7 +24,7 @@ function Copyright(props) {
       {'Copyright © '}
       {/* <Link color="inherit" href="https://mui.com/"> */}
       <Link color="inherit" href="">
-        Your Website
+        NMRC S4Trading
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
