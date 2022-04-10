@@ -190,7 +190,7 @@ const MasterLayout=()=>{
         e.preventDefault() ;
         axios.post(`/api/logout`).then(res=>{
             if (res.data.status===400) {
-                // localStorage.removeItem('auth_token');
+                localStorage.removeItem('auth_token');
                 localStorage.removeItem('auth_name');
                 localStorage.removeItem('email');
                 history.push('/');
