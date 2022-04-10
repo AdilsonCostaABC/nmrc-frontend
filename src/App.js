@@ -45,7 +45,7 @@ function App() {
           <Route exact path="/register" component={Register} /> */}
           {/* if there is user logged in, do not allow to 
            from url to go to login or register */}
-          <Route path="/login" >
+          <Route path="/login">
             {localStorage.getItem('auth_token') ? <Redirect to='/admin/dashboard' />:<Login />}
           </Route>
           <Route path="/register"> 

@@ -61,9 +61,12 @@ export default function SignInSide() {
             password: data.get('password1'),
           }).then(res =>{
             if (res.data.status===400 ) {
+              if(!(localStorage.getItem('app_key')===res.data.app_key)){
+                
                 localStorage.setItem('auth_token',res.data.token);
                 localStorage.setItem('auth_name',res.data.username);
                 localStorage.setItem('email',res.data.email);
+                localStorage.setItem('app_key',res.data.app_key);
                 // swal({
                 //     title: "Login",
                 //     text:res.data.message,
@@ -76,6 +79,14 @@ export default function SignInSide() {
                   } else {
                     history.push('/');
                   }
+              }else{
+                swal({
+                  title: "Login",
+                  text:"You are already logged in as "+localStorage.getItem("auth_name"),
+                  icon: "warning",
+                  button: "ok",
+                });
+              }
                 
             } else if(res.data.status===300){
                 swal({

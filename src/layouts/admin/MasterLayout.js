@@ -191,8 +191,27 @@ const MasterLayout=()=>{
         axios.post(`/api/logout`).then(res=>{
             if (res.data.status===400) {
                 // localStorage.removeItem('auth_token');
-                localStorage.removeItem('auth_name');
-                localStorage.removeItem('email');
+                localStorage.clear('auth_token');
+                // localStorage.removeItem('auth_name');
+                localStorage.clear('auth_name');
+                // localStorage.removeItem('email');
+                localStorage.clear('email');
+                history.push('/');
+                   
+            }
+
+        });
+    }
+  const logoutAllSubmit=(e)=>{
+        e.preventDefault() ;
+        axios.post(`/api/logoutAll`).then(res=>{
+            if (res.data.status===400) {
+                // localStorage.removeItem('auth_token');
+                localStorage.clear('auth_token');
+                // localStorage.removeItem('auth_name');
+                localStorage.clear('auth_name');
+                // localStorage.removeItem('email');
+                localStorage.clear('email');
                 history.push('/');
                    
             }
@@ -263,6 +282,11 @@ const MasterLayout=()=>{
                 <MenuItem  onClick={handleCloseNavMenu}>
                   <Typography textAlign="center" onClick={logoutSubmit}>
                             Logout
+                  </Typography>
+                </MenuItem>
+                <MenuItem  onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center" onClick={logoutAllSubmit}>
+                            Logout everywhere
                   </Typography>
                 </MenuItem>
             </Menu>
