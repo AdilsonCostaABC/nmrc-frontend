@@ -76,6 +76,7 @@ export default function SignInSide() {
                   //checking if the user is admin or normal user
                   if (res.data.role==='admin') {
                        history.push('/admin/dashboard');
+                       window.location.reload();
                   } else {
                     history.push('/');
                   }
