@@ -271,13 +271,13 @@ const MasterLayout=()=>{
               onClose={handleCloseUserMenu}
             >
            
-                <MenuItem >
+                {/* <MenuItem >
                   <Typography textAlign="center">
                             <Link style={{ textDecoration: 'none', color:'black' }}  to="/admin/ChangePassword" >
                                 User Profile
                            </Link>
                   </Typography>
-                </MenuItem>
+                </MenuItem> */}
             
                 <MenuItem  onClick={handleCloseNavMenu}>
                   <Typography textAlign="center" onClick={logoutSubmit}>
