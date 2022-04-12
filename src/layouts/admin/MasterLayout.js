@@ -413,27 +413,28 @@ const MasterLayout=()=>{
               <Collapse in={open2} timeout="auto" unmountOnExit>
                       
                       <MenuItem
-                          style={{ width:300}}
-                      >
-                            <FactCheckIcon style={{ marginLeft: '32px',marginBottom: '5px'}}   fontSize="medium" color="white" />
-                            <Link  style={{marginLeft: '16px',marginBottom: '5px',textDecoration: 'none', color:'white' }}  to="/admin/view-permit-not-approved" >
-                                Permit Approve
-                            </Link>
-                      </MenuItem>
-                      <MenuItem 
-                        style={{ width:300}}
-                      >
-                            <CancelIcon style={{ marginLeft: '32px',marginBottom: '5px'}}   fontSize="medium" color="white" />
-                            <Link  style={{marginLeft: '16px',marginBottom: '5px',textDecoration: 'none', color:'white' }}  to="/admin/rejected-permit" >
-                                Cancellled Permit Application
-                            </Link>
-                      </MenuItem>
-                      <MenuItem
                            style={{ width:300}}
                       >
                             <AssignmentIcon style={{ marginLeft: '32px',marginBottom: '5px'}}   fontSize="medium" color="white" />
                             <Link  style={{marginLeft: '16px',marginBottom: '5px',textDecoration: 'none', color:'white' }}  to="/admin/add-permit" >
                                 Permit Application
+                            </Link>
+                      </MenuItem>
+                      <MenuItem 
+                          style={{ width:300}}
+
+                      >
+                            <ConfirmationNumberIcon style={{ marginLeft: '32px',marginBottom: '5px'}}   fontSize="medium" color="white" />
+                            <Link  style={{marginLeft: '16px',marginBottom: '5px',textDecoration: 'none', color:'white' }}  to="/admin/view-permit-not-verified" >
+                                Permit Verify
+                            </Link>
+                      </MenuItem>
+                      <MenuItem
+                          style={{ width:300}}
+                      >
+                            <FactCheckIcon style={{ marginLeft: '32px',marginBottom: '5px'}}   fontSize="medium" color="white" />
+                            <Link  style={{marginLeft: '16px',marginBottom: '5px',textDecoration: 'none', color:'white' }}  to="/admin/view-permit-not-approved" >
+                                Permit Approve
                             </Link>
                       </MenuItem>
                       <MenuItem 
@@ -455,18 +456,17 @@ const MasterLayout=()=>{
                       <MenuItem 
                         style={{ width:300}}
                       >
-                            <ReceiptIcon style={{ marginLeft: '32px',marginBottom: '5px'}}   fontSize="medium" color="white" />
-                            <Link  style={{marginLeft: '16px',marginBottom: '5px',textDecoration: 'none', color:'white' }}  to="/admin/Report" >
-                                Report
+                            <CancelIcon style={{ marginLeft: '32px',marginBottom: '5px'}}   fontSize="medium" color="white" />
+                            <Link  style={{marginLeft: '16px',marginBottom: '5px',textDecoration: 'none', color:'white' }}  to="/admin/rejected-permit" >
+                                Cancellled Permit(s)
                             </Link>
                       </MenuItem>
                       <MenuItem 
-                          style={{ width:300}}
-
+                        style={{ width:300}}
                       >
-                            <ConfirmationNumberIcon style={{ marginLeft: '32px',marginBottom: '5px'}}   fontSize="medium" color="white" />
-                            <Link  style={{marginLeft: '16px',marginBottom: '5px',textDecoration: 'none', color:'white' }}  to="/admin/view-permit-not-verified" >
-                                Permit Verify
+                            <ReceiptIcon style={{ marginLeft: '32px',marginBottom: '5px'}}   fontSize="medium" color="white" />
+                            <Link  style={{marginLeft: '16px',marginBottom: '5px',textDecoration: 'none', color:'white' }}  to="/admin/Report" >
+                                Report
                             </Link>
                       </MenuItem>
               </Collapse>
