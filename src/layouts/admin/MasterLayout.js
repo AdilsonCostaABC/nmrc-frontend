@@ -1,7 +1,7 @@
 import Reac from 'react';
 import {Switch,Route,Redirect} from 'react-router-dom';
 import logoS4 from './IMG-20210421-WA0103.jpg';
-import image1 from './m3.jpg';
+import sidePic from './sidebarPic.png';
 import { useState } from "react"; 
 import clsx from "clsx";
 import Box from '@mui/material/Box';
@@ -98,8 +98,8 @@ const useStyles = makeStyles((theme) => ({
         flex: 1,
       },
       drawer: {
-        backgroundImage: 'url(https://source.unsplash.com/random)',
-        // backgroundImage: `url(${image1})`,
+        // backgroundImage: 'url(https://source.unsplash.com/random)',
+        backgroundImage: `url(${sidePic})`,
         // style={{ height: 120, width: 120, borderRadius: 0 , marginTop:20 }}
        
 
