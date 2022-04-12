@@ -286,7 +286,7 @@ const MasterLayout=()=>{
                 </MenuItem>
                 <MenuItem  onClick={handleCloseNavMenu}>
                   <Typography textAlign="center" onClick={logoutAllSubmit}>
-                            Logout everywhere
+                            {/* Logout everywhere */}
                   </Typography>
                 </MenuItem>
             </Menu>
