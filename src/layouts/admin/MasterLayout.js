@@ -317,7 +317,7 @@ const MasterLayout=()=>{
                       </Link>
               </MenuItem>
              
-              <MenuItem 
+              {/* <MenuItem 
                 onClick={handleClick}
                 style={{ width:300}}
               >
@@ -395,7 +395,7 @@ const MasterLayout=()=>{
                       </MenuItem>
                       
             
-              </Collapse>
+              </Collapse> */}
 
 
               <MenuItem 
