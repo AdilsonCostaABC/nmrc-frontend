@@ -212,7 +212,7 @@ function PermitPrint() {
                                                             sx={{ background: '#00022E',mt:-2,mb:0, '&:hover': { background: 'white', color:'#00022E' } }}
                                                             
                                                         >
-                                                            <PreviewIcon fontSize="small"/>
+                                                            <PrintIcon fontSize="small"/>
                                                         </Button>
                                                 </Link>  
                                               </Tooltip>  
