@@ -450,7 +450,7 @@ const MasterLayout=()=>{
                       >
                             <PrintIcon style={{ marginLeft: '32px',marginBottom: '5px'}}   fontSize="medium" color="white" />
                             <Link  style={{marginLeft: '16px',marginBottom: '5px',textDecoration: 'none', color:'white' }}  to="/admin/PermitPrint" >
-                                Permit Print
+                                 Permit  Print 
                             </Link>
                       </MenuItem>
                       <MenuItem 
